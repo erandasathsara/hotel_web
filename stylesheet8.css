@@ -1,0 +1,134 @@
+.dropdown {
+    position: static;
+    display: inline-block !important;
+
+}
+
+.dropdown-content {
+    display: none !important;
+    position: absolute !important;
+    background-color: #2e2e2e !important;
+    min-width: 160px !important;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2) !important; */
+    z-index: 10000;
+}
+
+.dropdown-content a {
+
+    padding: 16px 18px !important;
+    text-decoration: none !important;
+    display: block !important;
+}
+
+.dropdown-content a:hover {
+    background-color: #2e2e2e !important;
+    color: #e5e5e5 !important;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block !important;
+}
+
+a span:hover {
+    opacity: 1 !important;
+}
+
+ul {
+    width: 100%;
+    list-style-type: none !important;
+    height: 140px;
+    margin: 0px !important;
+    padding-top: 30px;
+    overflow: hidden !important;
+    background-color: white;
+
+}
+
+.carousel-indicators {
+    margin-left: -10% !important;
+}
+
+li {
+    float: right;
+    height: 100px
+}
+
+li a {
+    display: block !important;
+    color: #A8A8A8;
+    text-align: center !important;
+    padding: 14px 20px !important;
+    text-decoration: none !important;
+    font-family: 'Cairo', sans-serif;
+    font-size: 12px;
+    
+}
+
+li a:hover:not(.active) {
+    background-color: white;
+    color: #555555;
+    font-family: 'Cairo', sans-serif;
+    font-size: 12px;
+}
+
+.active {
+    background-color: white !important;
+    color: #A8A8A8;
+    font-family: 'Cairo', sans-serif;
+    font-size: 12px;
+}
+
+
+.navbar-inverse {
+    background-color: white;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: white;
+}
+
+.navbar-inverse {
+    background-color: white;
+    border-color: white;
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 31px;
+    height: 4px;
+    border-radius: 1px;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+    border-color: white;
+}
+
+.dropdown-menu {
+    margin: 10px 10px;
+    position: absolute;
+    margin-left: 10vw !important;
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    opacity: 0.8;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    min-width: 160px;
+    font-size: 14px;
+    text-align: center;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1pxsolidrgba(0, 0, 0, .15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+    box-shadow: 0 6px 12pxrgba(0, 0, 0, .175);
+}

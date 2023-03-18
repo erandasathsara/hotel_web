@@ -1,0 +1,1347 @@
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" />
+    <link href="https://static3.cloudbeds.com/CF-ORIGIN/minimize/css/booking.823.min.css.gz" type="text/css"
+        rel="stylesheet" />
+
+    <title>The Sandhya - Ahangama, Sri Lanka - Best Price Guarantee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+    <style>
+        .container1,
+        .container2,
+        .available_rooms,
+        .choose_room,
+        .page-bar {
+            background-color: #f6f5f5;
+        }
+
+        .page-header.navbar {
+            background-color: #bec4d1;
+        }
+
+        .page-breadcrumb li.active>span {
+            background-color: #c6c9ce;
+        }
+
+        .page-breadcrumb li.active>span:after {
+            border-left: 30px solid #c6c9ce;
+        }
+
+        .check_availability_group .btn-warning[name="check_availability"] {
+            background-color: #e0b4a2;
+        }
+
+        .check_availability_group .btn-warning[name="check_availability"]:hover,
+        .check_availability_group .btn-warning[name="check_availability"]:active,
+        .check_availability_group .btn-warning[name="check_availability"]:focus {
+            background-color: #caa292;
+        }
+
+        .rooms_select .btn,
+        .rooms_select.open .btn,
+        .accommodation-row.selected .select-room-block,
+        .green.btn,
+        .green.btn.disabled {
+            background-color: #5f616b;
+        }
+
+        .green.btn:active,
+        .green.btn.active,
+        .green.btn.disabled:active,
+        .green.btn.disabled:hover,
+        .green.btn:hover,
+        .rooms_select .btn:hover,
+        .rooms_select .btn:focus,
+        .rooms_select .btn:active,
+        .btn.green:not(.btn-outline):focus,
+        .roomtype .bootstrap-select.rooms_select .btn:focus {
+            background-color: #565861;
+        }
+
+        .only_left {
+            display: none;
+        }
+
+        .map_info,
+        #map_canvas {
+            display: none;
+        }
+
+        div.page-header.navbar {
+            background-color: #ffffff;
+        }
+
+        div.container1 {
+            background-color: #ffffff;
+        }
+
+        div.col-md-12.padding-left-right-0.gray_bg.custom-bg {
+            background-color: #ffffff;
+        }
+
+        .page-breadcrumb li.active a {
+            background: #d1a683;
+        }
+
+        .page-breadcrumb li.active a:after {
+            border-left-color: #d1a683;
+        }
+
+        .rooms_select .btn,
+        .rooms_select.open .btn,
+        .rooms_select .btn:hover,
+        .rooms_select .btn:focus,
+        .rooms_select .btn:active {
+            background: #d1a683;
+        }
+
+        .green.btn.book_now {
+            background-color: #d1a683;
+        }
+
+        .name_room {
+            color: #333333;
+            text-decoration: none;
+        }
+
+        .btn-warning {
+            background-color: #d1a683;
+            border-color: #d1a683;
+        }
+
+        .btn-warning:hover,
+        .btn-warning:focus,
+        .btn-warning:active,
+        .btn-warning.active {
+            background-color: #d1a683;
+            border-color: #d1a683;
+        }
+
+        .green.btn {
+            background-color: #d1a683;
+            border-color: #d1a683;
+        }
+
+        .green.btn:hover {
+            background-color: #d1a683;
+            border-color: #d1a683;
+        }
+
+        @import url("https://fonts.googleapis.com/css?family=Quicksand");
+
+        div,
+        ul,
+        li,
+        h5,
+        p,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: "Quicksand", sans-serif;
+        }
+
+        body {
+            font-family: "Quicksand", sans-serif;
+        }
+
+        th.children.custom-children {
+            visibility: hidden !important;
+            display: none;
+        }
+
+        td.children {
+            visibility: hidden !important;
+            display: none;
+        }
+
+        .av-children {
+            visibility: hidden !important;
+            display: none;
+        }
+
+        .logo {
+            cursor: pointer;
+        }
+
+        #lang_currency_switchers>a.dropdown {
+            margin-left: 0px;
+            margin-top: 2px;
+        }
+
+        .map_info,
+        #map_canvas {
+            display: block;
+        }
+    </style>
+    
+    <link rel="shortcut icon" href="https://hotels.cloudbeds.com/favicon.ico" />
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1068.0" data-gr-ext-installed="">
+    <div class="v page-header-wrap navbar">
+        <div class="page-header-inner container">
+            <h1 class="hotel_name margin-left-160" alt="The Sandhya">
+            </h1>
+            <div id="lang_currency_switchers">
+                <div class="first"></div>
+                <a class="dropdown middle" href="#" alt="Language" aria-label="Language" role="button">
+                    <span><span class="flag us"></span></span>
+                    <div class="div-selector">
+                        <ul id="lang-selector">
+                            <li data-lang="en" class="selected" data-imagecss="flag en" data-title="United States">
+                                <button class="lang-currency-dropdown-button">
+                                    <span class="flag us"></span>English
+                                </button>
+                            </li>
+                            <li data-lang="pt-br" data-imagecss="flag pt-br" data-title="Brazil">
+                                <button class="lang-currency-dropdown-button">
+                                    <span class="flag br"></span>Português
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                <a class="last dropdown" href="#">
+                    <span>USD</span>
+                    <div id="div-currency-selector" class="div-selector">
+                        <ul id="currency-selector">
+                            <li data-value="AED">
+                                <button class="lang-currency-dropdown-button">
+                                    AED Utd. Arab Emir. Dirham
+                                </button>
+                            </li>
+                            <li data-value="AFN">
+                                <button class="lang-currency-dropdown-button">
+                                    AFN Afghanistan Afghani
+                                </button>
+                            </li>
+                            <li data-value="ALL">
+                                <button class="lang-currency-dropdown-button">
+                                    ALL Albanian Lek
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="container1">
+            <div class="listing">
+                <div class="container z-index-0">
+                    <div class="gray_bg custom-bg search-panel-wrap">
+                        <img class="logo visible-lg-block visible-md-block margin-left-0"
+                            src="https://h-img3.cloudbeds.com/uploads/8744/inst1_thumb~~618ea6f650e25.png"
+                            alt="undefined" />
+                        <div class="hotel_inform hidden-xs hidden-sm col-md-3 padding-right-0">
+                            <div class="hotel_views">
+                                <div id="hotel-slider">
+                                    <a rel="gallery" data-slide-index="0" href="javascript:;" class="">
+                                        <img src="https://h-img3.cloudbeds.com/uploads/8744/_mp11527_thumb~~599f893315653.jpg"
+                                            alt="The Sandhya" />
+                                    </a>
+                                    <a rel="gallery" data-slide-index="0" class="" href="javascript:;">
+                                        <img src="https://h-img3.cloudbeds.com/uploads/8744/matt-power-sandhya-11122_thumb~~59b4f9864f056.jpg"
+                                            alt="The Sandhya" />
+                                    </a>
+                                    <a rel="gallery" data-slide-index="1" class="" href="javascript:;">
+                                        <img src="https://h-img3.cloudbeds.com/uploads/8744/matt-power-sandhya-11140_thumb~~59b4f98e17ccf.jpg"
+                                            alt="The Sandhya" />
+                                    </a>
+                                    <a class="next_photo" href="#">+<span class="count-hidden-photos"> 5 </span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search_panel">
+                            <form id="rooms-search-form" class="">
+                                <input type="hidden" name="widget_property" class="do_not_reset" value="8744" />
+                                <input type="hidden" name="lang" value="en" />
+                                <div class="form-group">
+                                    <label class="control-label" for="start_date_not_mobile">Check-in</label>
+                                    <div class="input-group">
+                                        <input type="text" aria-label="Check-in" class="form-control datepicker"
+                                            name="search_start_date" id="start_date_not_mobile" />
+                                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                    </div>
+                                </div>
+                                <div class="form-group checkout-date">
+                                    <label class="control-label" for="end_date_not_mobile">Check-out</label>
+                                    <div class="input-group">
+                                        <input type="text" aria-label="Check-out" class="form-control datepicker"
+                                            name="search_end_date" id="end_date_not_mobile" />
+                                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                    </div>
+                                </div>
+                                <div class="form-actions check_availability_group">
+                                    <div class="form-group">
+                                        <label aria-label="Availability">
+                                            <span class="control-label show_avail_calendar visible-md visible-lg">
+                                                <i class="fa fa-calendar"></i>
+                                                <a href="#" data-focus-target="availability_popup">Availability</a>
+                                            </span>
+                                        </label>
+                                        <button type="submit" class="btn btn-warning btn-block"
+                                            name="check_availability" autocomplete="off" aria-label="Search"
+                                            tooltip="If you change dates, you need to search availability for the new date range">
+                                            Search
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container main-content">
+                <div class="page-bar visible-md-block visible-lg-block wizard" id="wizard">
+                    <ul class="page-breadcrumb row">
+                        <li class="col-md-6 col-sm-6 active first">
+                            <span>
+                                <span class="numberCircle checkLabel bg-green-jungle">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                                <span class="numberCircle numberLabel">1</span>
+                                <b>Choose a room</b>
+                            </span>
+                        </li>
+                        <li class="col-md-6 col-sm-6 second">
+                            <span>
+                                <span class="numberCircle checkLabel bg-green-jungle">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                                <span class="numberCircle numberLabel">2</span>
+                                <b>Check out</b>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="wizard-container">
+                    <div class="choose_room">
+                        <div class="available_rooms">
+                            <div class="col-md-9 padding-left-0 col-sm-12 col-xs-12">
+                                <div class="availability_list">
+                                    <div class="av_wrapper" rel="data" data-room-type-id="53570">
+                                        <div class="av_roomtype">
+                                            <div class="av_gallery">
+                                                <div class="gallery_wrapper">
+                                                    <img
+                                                        src="https://hotels.cloudbeds.com/assets/booking/images/empty.png" />
+                                                    <a href="#" class="featured_photo" data-focus-target="room-gallery-"
+                                                        style="
+                                background-image: url('https://h-img1.cloudbeds.com/uploads/8744/matt-power-sandhya-11080_featured~~599d3f817f3be.jpg');
+                                display: block;
+                              " aria-label="">
+                                                        <img src="	https://hotels.cloudbeds.com/assets/booking/images/bigger.png"
+                                                            alt="bigger images" class="bigger" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="av-info">
+                                                <div class="av-name-info">
+                                                    <div class="av-name" tabindex="0" aria-label="Studio King Sea View">
+                                                        Studio King Sea View
+                                                    </div>
+                                                    <div class="av-left-rooms" tabindex="0" aria-label="only 5 left">
+                                                        only
+                                                        <span rate-only-left="" data-lang-only="only"
+                                                            data-lang-left="left">5</span>
+                                                        left
+                                                    </div>
+                                                </div>
+                                                <div class="av-min-max-wrapper">
+                                                    <div class="av-occupancy">
+                                                        <div>Maximum Occupancy</div>
+                                                        <div>
+                                                            <img class="guests_icon"
+                                                                src="https://hotels.cloudbeds.com/assets/booking/images/guest.png"
+                                                                alt="max guests icon" />
+                                                            <span rate-max-occupancy="" tabindex="0"
+                                                                data-lang-max-occupancy="Maximum Occupancy"
+                                                                aria-label="Maximum Occupancy 2">2</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="av-max-stay">
+                                                        <div>Minimum Stay</div>
+                                                        <div>
+                                                            <span rate-min-los="" tabindex="0"
+                                                                data-lang-min-los="Minimum Stay"
+                                                                aria-label="Minimum Stay {rates.[0].los_min}} Night(s)">1</span>
+                                                            <span>Night(s)</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="av-rates">
+                                                    <div class="price-from">Price From</div>
+                                                    <div class="av-roomrate-wrapper">
+                                                        <div class="av-roomrate" data-short-name="SK"
+                                                            data-package-internal-name="">
+                                                            <div class="md-radio">
+                                                                <input name="check_roomrate-53570" class="md-radiobtn"
+                                                                    id="radio-53570-100858" type="radio"
+                                                                    data-package-id="0" data-rate-id="100858"
+                                                                    checked="checked" autocomplete="off" />
+                                                                <label for="radio-53570-100858" class="rate-label"
+                                                                    tabindex="0" aria-label="Standard Rate: $225.00">
+                                                                    <span class="check"></span>
+                                                                    <span class="box"></span>
+                                                                    <em>Standard Rate</em>
+                                                                </label>
+                                                                <div class="checked"></div>
+                                                            </div>
+                                                            <div class="av-rate-price">
+                                                                <span> $225.00 </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="av-roomrate" data-short-name="SK"
+                                                            data-package-internal-name="Last minute 2022">
+                                                            <div class="md-radio">
+                                                                <input name="check_roomrate-53570" class="md-radiobtn"
+                                                                    id="radio-53570-1063939" type="radio"
+                                                                    data-package-id="146410" data-rate-id="1063939"
+                                                                    autocomplete="off" />
+                                                                <label for="radio-53570-1063939" class="rate-label"
+                                                                    tabindex="0"
+                                                                    aria-label="Last Minute Offer (Breakfast Included, Non-Refundable): $202.50">
+                                                                    <span class="check"></span>
+                                                                    <span class="box"></span>
+                                                                    <em>Last Minute Offer (Breakfast Included,
+                                                                        Non-Refundable)</em>
+                                                                </label>
+                                                                <div class="checked"></div>
+                                                            </div>
+                                                            <div class="av-rate-price">
+                                                                <span class="old-price"> $225.00 </span>
+                                                                <span class="new-price"> $202.50 </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr />
+
+                                                <div class="av-details">
+                                                    <a class="details-switcher show-details" href="#"
+                                                        aria-label="See Details">
+                                                        <i class="fa fa-arrow-circle-o-down"></i>
+                                                        <i class="fa fa-arrow-circle-o-up"></i>
+                                                        <span rate-details-switcher-text=""
+                                                            data-closed-details-text="See Details"
+                                                            data-opened-details-text="Hide Details"></span>
+                                                    </a>
+                                                    <div class="av-room-options">
+                                                        <div class="av-adults">
+                                                            <label class="type_of_room">Adults</label>
+                                                            <select class="adults_select bs-select-hidden"
+                                                                name="adults[100858]" data-aria-label-prefix="Adults">
+                                                                <option value="1" selected="">1</option>
+                                                                <option value="2">2</option>
+                                                            </select>
+                                                            <div class="btn-group bootstrap-select adults_select">
+                                                                <button type="button"
+                                                                    class="btn dropdown-toggle btn-default"
+                                                                    data-toggle="dropdown" aria-label="Adults: 1"
+                                                                    title="1">
+                                                                    <span
+                                                                        class="filter-option pull-left">1</span>&nbsp;<span
+                                                                        class="caret"></span>
+                                                                </button>
+                                                                <div class="dropdown-menu open">
+                                                                    <ul class="dropdown-menu inner" role="menu">
+                                                                        <li data-original-index="0" class="selected">
+                                                                            <a tabindex="0" class="" style=""
+                                                                                data-tokens="null"><span
+                                                                                    class="checkbox check-mark"><span
+                                                                                        class="inc"></span><span
+                                                                                        class="check"></span><span
+                                                                                        class="box"></span></span><span
+                                                                                    class="text">1</span></a>
+                                                                        </li>
+                                                                        <li data-original-index="1">
+                                                                            <a tabindex="0" class="" style=""
+                                                                                data-tokens="null"><span
+                                                                                    class="checkbox check-mark"><span
+                                                                                        class="inc"></span><span
+                                                                                        class="check"></span><span
+                                                                                        class="box"></span></span><span
+                                                                                    class="text">2</span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="no-rooms av-quantity">
+                                                            <label class="type_of_room"> Rooms </label>
+                                                            <div class="several_rows">
+                                                                <select class="rooms_select bs-select-hidden"
+                                                                    name="qty_rooms[100858]"
+                                                                    data-aria-label-prefix="Rooms">
+                                                                    <option value="0" selected="">0</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                </select>
+                                                                <div class="btn-group bootstrap-select rooms_select">
+                                                                    <button type="button"
+                                                                        class="btn dropdown-toggle btn-default"
+                                                                        data-toggle="dropdown" aria-label="Rooms: 0"
+                                                                        title="0">
+                                                                        <span
+                                                                            class="filter-option pull-left">0</span>&nbsp;<span
+                                                                            class="caret"></span>
+                                                                    </button>
+                                                                    <div class="dropdown-menu open">
+                                                                        <ul class="dropdown-menu inner" role="menu">
+                                                                            <li data-original-index="0"
+                                                                                class="selected">
+                                                                                <a tabindex="0" class="" style=""
+                                                                                    data-tokens="null"><span
+                                                                                        class="checkbox check-mark"><span
+                                                                                            class="inc"></span><span
+                                                                                            class="check"></span><span
+                                                                                            class="box"></span></span><span
+                                                                                        class="text">0</span></a>
+                                                                            </li>
+                                                                            <li data-original-index="1">
+                                                                                <a tabindex="0" class="" style=""
+                                                                                    data-tokens="null"><span
+                                                                                        class="checkbox check-mark"><span
+                                                                                            class="inc"></span><span
+                                                                                            class="check"></span><span
+                                                                                            class="box"></span></span><span
+                                                                                        class="text">1</span></a>
+                                                                            </li>
+                                                                            <li data-original-index="2">
+                                                                                <a tabindex="0" class="" style=""
+                                                                                    data-tokens="null"><span
+                                                                                        class="checkbox check-mark"><span
+                                                                                            class="inc"></span><span
+                                                                                            class="check"></span><span
+                                                                                            class="box"></span></span><span
+                                                                                        class="text">2</span></a>
+                                                                            </li>
+                                                                            <li data-original-index="3">
+                                                                                <a tabindex="0" class="" style=""
+                                                                                    data-tokens="null"><span
+                                                                                        class="checkbox check-mark"><span
+                                                                                            class="inc"></span><span
+                                                                                            class="check"></span><span
+                                                                                            class="box"></span></span><span
+                                                                                        class="text">3</span></a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="av_wrapper" rel="data" data-room-type-id="53586">
+                                        <div class="av_roomtype">
+                                            <div class="av_gallery">
+                                                <div class="gallery_wrapper">
+                                                    <img
+                                                        src="https://hotels.cloudbeds.com/assets/booking/images/empty.png" />
+                                                    <a href="#" class="featured_photo" data-focus-target="room-gallery-"
+                                                        style="
+                                background-image: url('https://h-img1.cloudbeds.com/uploads/8744/twin_room_lightroom_featured~~59c6b4ea2eac9.jpg');
+                                display: block;
+                              " aria-label="">
+                                                        <img src="	https://hotels.cloudbeds.com/assets/booking/images/bigger.png"
+                                                            alt="bigger images" class="bigger" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="av-info">
+                                                <div class="av-name-info">
+                                                    <div class="av-name" tabindex="0" aria-label="Studio Twin Sea View">
+                                                        Studio Twin Sea View
+                                                    </div>
+                                                    <div class="av-left-rooms" tabindex="0" aria-label="only 1 left">
+                                                        only
+                                                        <span rate-only-left="" data-lang-only="only"
+                                                            data-lang-left="left">1</span>
+                                                        left
+                                                    </div>
+                                                </div>
+                                                <div class="av-min-max-wrapper">
+                                                    <div class="av-occupancy">
+                                                        <div>Maximum Occupancy</div>
+                                                        <div>
+                                                            <img class="guests_icon"
+                                                                src="https://hotels.cloudbeds.com/assets/booking/images/guest.png"
+                                                                alt="max guests icon" />
+                                                            <span rate-max-occupancy="" tabindex="0"
+                                                                data-lang-max-occupancy="Maximum Occupancy"
+                                                                aria-label="Maximum Occupancy 2">2</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="av-max-stay">
+                                                        <div>Minimum Stay</div>
+                                                        <div>
+                                                            <span rate-min-los="" tabindex="0"
+                                                                data-lang-min-los="Minimum Stay"
+                                                                aria-label="Minimum Stay {rates.[0].los_min}} Night(s)">1</span>
+                                                            <span>Night(s)</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="av-rates">
+                                                    <div class="price-from">Price From</div>
+                                                    <div class="av-roomrate-wrapper">
+                                                        <div class="av-roomrate" data-short-name="ST"
+                                                            data-package-internal-name="">
+                                                            <div class="md-radio">
+                                                                <input name="check_roomrate-53586" class="md-radiobtn"
+                                                                    id="radio-53586-100886" type="radio"
+                                                                    data-package-id="0" data-rate-id="100886"
+                                                                    checked="checked" autocomplete="off" />
+                                                                <label for="radio-53586-100886" class="rate-label"
+                                                                    tabindex="0" aria-label="Standard Rate: $225.00">
+                                                                    <span class="check"></span>
+                                                                    <span class="box"></span>
+                                                                    <em>Standard Rate</em>
+                                                                </label>
+                                                                <div class="checked"></div>
+                                                            </div>
+                                                            <div class="av-rate-price">
+                                                                <span> $225.00 </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="av-roomrate" data-short-name="ST"
+                                                            data-package-internal-name="Last minute 2022">
+                                                            <div class="md-radio">
+                                                                <input name="check_roomrate-53586" class="md-radiobtn"
+                                                                    id="radio-53586-1063940" type="radio"
+                                                                    data-package-id="146410" data-rate-id="1063940"
+                                                                    autocomplete="off" />
+                                                                <label for="radio-53586-1063940" class="rate-label"
+                                                                    tabindex="0"
+                                                                    aria-label="Last Minute Offer (Breakfast Included, Non-Refundable): $202.50">
+                                                                    <span class="check"></span>
+                                                                    <span class="box"></span>
+                                                                    <em>Last Minute Offer (Breakfast Included,
+                                                                        Non-Refundable)</em>
+                                                                </label>
+                                                                <div class="checked"></div>
+                                                            </div>
+                                                            <div class="av-rate-price">
+                                                                <span class="old-price"> $225.00 </span>
+                                                                <span class="new-price"> $202.50 </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr />
+
+                                                <div class="av-details">
+                                                    <a class="details-switcher show-details" href="#"
+                                                        aria-label="See Details">
+                                                        <i class="fa fa-arrow-circle-o-down"></i>
+                                                        <i class="fa fa-arrow-circle-o-up"></i>
+                                                        <span rate-details-switcher-text=""
+                                                            data-closed-details-text="See Details"
+                                                            data-opened-details-text="Hide Details"></span>
+                                                    </a>
+                                                    <div class="av-room-options">
+                                                        <div class="av-adults">
+                                                            <label class="type_of_room">Adults</label>
+                                                            <select class="adults_select bs-select-hidden"
+                                                                name="adults[100886]" data-aria-label-prefix="Adults">
+                                                                <option value="1" selected="">1</option>
+                                                                <option value="2">2</option>
+                                                            </select>
+                                                            <div class="btn-group bootstrap-select adults_select">
+                                                                <button type="button"
+                                                                    class="btn dropdown-toggle btn-default"
+                                                                    data-toggle="dropdown" aria-label="Adults: 1"
+                                                                    title="1">
+                                                                    <span
+                                                                        class="filter-option pull-left">1</span>&nbsp;<span
+                                                                        class="caret"></span>
+                                                                </button>
+                                                                <div class="dropdown-menu open">
+                                                                    <ul class="dropdown-menu inner" role="menu">
+                                                                        <li data-original-index="0" class="selected">
+                                                                            <a tabindex="0" class="" style=""
+                                                                                data-tokens="null"><span
+                                                                                    class="checkbox check-mark"><span
+                                                                                        class="inc"></span><span
+                                                                                        class="check"></span><span
+                                                                                        class="box"></span></span><span
+                                                                                    class="text">1</span></a>
+                                                                        </li>
+                                                                        <li data-original-index="1">
+                                                                            <a tabindex="0" class="" style=""
+                                                                                data-tokens="null"><span
+                                                                                    class="checkbox check-mark"><span
+                                                                                        class="inc"></span><span
+                                                                                        class="check"></span><span
+                                                                                        class="box"></span></span><span
+                                                                                    class="text">2</span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="no-rooms av-quantity">
+                                                            <label class="type_of_room"> Rooms </label>
+                                                            <div class="several_rows">
+                                                                <select class="rooms_select bs-select-hidden"
+                                                                    name="qty_rooms[100886]" data-aria-label-prefix="
+                                                        Rooms    
+                                                ">
+                                                                    <option value="0" selected="">0</option>
+                                                                    <option value="1">1</option>
+                                                                </select>
+                                                                <div class="btn-group bootstrap-select rooms_select">
+                                                                    <button type="button"
+                                                                        class="btn dropdown-toggle btn-default"
+                                                                        data-toggle="dropdown" aria-label="Rooms: 0"
+                                                                        title="0">
+                                                                        <span
+                                                                            class="filter-option pull-left">0</span>&nbsp;<span
+                                                                            class="caret"></span>
+                                                                    </button>
+                                                                    <div class="dropdown-menu open">
+                                                                        <ul class="dropdown-menu inner" role="menu">
+                                                                            <li data-original-index="0"
+                                                                                class="selected">
+                                                                                <a tabindex="0" class="" style=""
+                                                                                    data-tokens="null"><span
+                                                                                        class="checkbox check-mark"><span
+                                                                                            class="inc"></span><span
+                                                                                            class="check"></span><span
+                                                                                            class="box"></span></span><span
+                                                                                        class="text">0</span></a>
+                                                                            </li>
+                                                                            <li data-original-index="1">
+                                                                                <a tabindex="0" class="" style=""
+                                                                                    data-tokens="null"><span
+                                                                                        class="checkbox check-mark"><span
+                                                                                            class="inc"></span><span
+                                                                                            class="check"></span><span
+                                                                                            class="box"></span></span><span
+                                                                                        class="text">1</span></a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="av_wrapper" rel="data" data-room-type-id="53587">
+                                        <div class="av_roomtype">
+                                            <div class="av_gallery">
+                                                <div class="gallery_wrapper">
+                                                    <img
+                                                        src="https://hotels.cloudbeds.com/assets/booking/images/empty.png" />
+                                                    <a href="#" class="featured_photo" data-focus-target="room-gallery-"
+                                                        style="
+                                background-image: url('https://h-img2.cloudbeds.com/uploads/8744/matt-power-sandhya-11100_featured~~599d5892f1160.jpg');
+                                display: block;
+                              " aria-label="">
+                                                        <img src="	https://hotels.cloudbeds.com/assets/booking/images/bigger.png"
+                                                            alt="bigger images" class="bigger" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="av-info">
+                                                <div class="av-name-info">
+                                                    <div class="av-name" tabindex="0"
+                                                        aria-label="Studio+ King Sea View">
+                                                        Studio+ King Sea View
+                                                    </div>
+                                                    <div class="av-left-rooms" tabindex="0" aria-label="only 2 left">
+                                                        only
+                                                        <span rate-only-left="" data-lang-only="only"
+                                                            data-lang-left="left">2</span>
+                                                        left
+                                                    </div>
+                                                </div>
+                                                <div class="av-min-max-wrapper">
+                                                    <div class="av-occupancy">
+                                                        <div>Maximum Occupancy</div>
+                                                        <div>
+                                                            <img class="guests_icon"
+                                                                src="https://hotels.cloudbeds.com/assets/booking/images/guest.png"
+                                                                alt="max guests icon" />
+                                                            <span rate-max-occupancy="" tabindex="0"
+                                                                data-lang-max-occupancy="Maximum Occupancy"
+                                                                aria-label="Maximum Occupancy 2">2</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="av-max-stay">
+                                                        <div>Minimum Stay</div>
+                                                        <div>
+                                                            <span rate-min-los="" tabindex="0"
+                                                                data-lang-min-los="Minimum Stay"
+                                                                aria-label="Minimum Stay {rates.[0].los_min}} Night(s)">1</span>
+                                                            <span>Night(s)</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="av-rates">
+                                                    <div class="price-from">Price From</div>
+                                                    <div class="av-roomrate-wrapper">
+                                                        <div class="av-roomrate" data-short-name="SPK"
+                                                            data-package-internal-name="">
+                                                            <div class="md-radio">
+                                                                <input name="check_roomrate-53587" class="md-radiobtn"
+                                                                    id="radio-53587-100887" type="radio"
+                                                                    data-package-id="0" data-rate-id="100887"
+                                                                    checked="checked" autocomplete="off" />
+                                                                <label for="radio-53587-100887" class="rate-label"
+                                                                    tabindex="0" aria-label="Standard Rate: $275.00">
+                                                                    <span class="check"></span>
+                                                                    <span class="box"></span>
+                                                                    <em>Standard Rate</em>
+                                                                </label>
+                                                                <div class="checked"></div>
+                                                            </div>
+                                                            <div class="av-rate-price">
+                                                                <span> $275.00 </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="av-roomrate" data-short-name="SPK"
+                                                            data-package-internal-name="Last minute 2022">
+                                                            <div class="md-radio">
+                                                                <input name="check_roomrate-53587" class="md-radiobtn"
+                                                                    id="radio-53587-1063941" type="radio"
+                                                                    data-package-id="146410" data-rate-id="1063941"
+                                                                    autocomplete="off" />
+                                                                <label for="radio-53587-1063941" class="rate-label"
+                                                                    tabindex="0"
+                                                                    aria-label="Last Minute Offer (Breakfast Included, Non-Refundable): $247.50">
+                                                                    <span class="check"></span>
+                                                                    <span class="box"></span>
+                                                                    <em>Last Minute Offer (Breakfast Included,
+                                                                        Non-Refundable)</em>
+                                                                </label>
+                                                                <div class="checked"></div>
+                                                            </div>
+                                                            <div class="av-rate-price">
+                                                                <span class="old-price"> $275.00 </span>
+                                                                <span class="new-price"> $247.50 </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr />
+
+                                                <div class="av-details">
+                                                    <a class="details-switcher show-details" href="#"
+                                                        aria-label="See Details">
+                                                        <i class="fa fa-arrow-circle-o-down"></i>
+                                                        <i class="fa fa-arrow-circle-o-up"></i>
+                                                        <span rate-details-switcher-text=""
+                                                            data-closed-details-text="See Details"
+                                                            data-opened-details-text="Hide Details"></span>
+                                                    </a>
+                                                    <div class="av-room-options">
+                                                        <div class="av-adults">
+                                                            <label class="type_of_room">Adults</label>
+                                                            <select class="adults_select bs-select-hidden"
+                                                                name="adults[100887]" data-aria-label-prefix="Adults">
+                                                                <option value="1" selected="">1</option>
+                                                                <option value="2">2</option>
+                                                            </select>
+                                                            <div class="btn-group bootstrap-select adults_select">
+                                                                <button type="button"
+                                                                    class="btn dropdown-toggle btn-default"
+                                                                    data-toggle="dropdown" aria-label="Adults: 1"
+                                                                    title="1">
+                                                                    <span
+                                                                        class="filter-option pull-left">1</span>&nbsp;<span
+                                                                        class="caret"></span>
+                                                                </button>
+                                                                <div class="dropdown-menu open">
+                                                                    <ul class="dropdown-menu inner" role="menu">
+                                                                        <li data-original-index="0" class="selected">
+                                                                            <a tabindex="0" class="" style=""
+                                                                                data-tokens="null"><span
+                                                                                    class="checkbox check-mark"><span
+                                                                                        class="inc"></span><span
+                                                                                        class="check"></span><span
+                                                                                        class="box"></span></span><span
+                                                                                    class="text">1</span></a>
+                                                                        </li>
+                                                                        <li data-original-index="1">
+                                                                            <a tabindex="0" class="" style=""
+                                                                                data-tokens="null"><span
+                                                                                    class="checkbox check-mark"><span
+                                                                                        class="inc"></span><span
+                                                                                        class="check"></span><span
+                                                                                        class="box"></span></span><span
+                                                                                    class="text">2</span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="no-rooms av-quantity">
+                                                            <label class="type_of_room"> Rooms </label>
+                                                            <div class="several_rows">
+                                                                <select class="rooms_select bs-select-hidden"
+                                                                    name="qty_rooms[100887]" data-aria-label-prefix="
+                                                        Rooms    
+                                                ">
+                                                                    <option value="0" selected="">0</option>
+                                                                    <option value="1">1</option>
+                                                                </select>
+                                                                <div class="btn-group bootstrap-select rooms_select">
+                                                                    <button type="button"
+                                                                        class="btn dropdown-toggle btn-default"
+                                                                        data-toggle="dropdown" aria-label="Rooms: 0"
+                                                                        title="0">
+                                                                        <span
+                                                                            class="filter-option pull-left">0</span>&nbsp;<span
+                                                                            class="caret"></span>
+                                                                    </button>
+                                                                    <div class="dropdown-menu open">
+                                                                        <ul class="dropdown-menu inner" role="menu">
+                                                                            <li data-original-index="0"
+                                                                                class="selected">
+                                                                                <a tabindex="0" class="" style=""
+                                                                                    data-tokens="null"><span
+                                                                                        class="checkbox check-mark"><span
+                                                                                            class="inc"></span><span
+                                                                                            class="check"></span><span
+                                                                                            class="box"></span></span><span
+                                                                                        class="text">0</span></a>
+                                                                            </li>
+                                                                            <li data-original-index="1">
+                                                                                <a tabindex="0" class="" style=""
+                                                                                    data-tokens="null"><span
+                                                                                        class="checkbox check-mark"><span
+                                                                                            class="inc"></span><span
+                                                                                            class="check"></span><span
+                                                                                            class="box"></span></span><span
+                                                                                        class="text">1</span></a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="av_wrapper" rel="data" data-room-type-id="53603">
+                                        <div class="av_roomtype">
+                                            <div class="av_gallery">
+                                                <div class="gallery_wrapper">
+                                                    <img
+                                                        src="https://hotels.cloudbeds.com/assets/booking/images/empty.png" />
+                                                    <a href="#" class="featured_photo" data-focus-target="room-gallery-"
+                                                        style="
+                                background-image: url('https://h-img1.cloudbeds.com/uploads/8744/sandyha-2-2_featured~~599d78d7e19be.jpg');
+                                display: block;
+                              " aria-label="">
+                                                        <img src="	https://hotels.cloudbeds.com/assets/booking/images/bigger.png"
+                                                            alt="bigger images" class="bigger" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="av-info">
+                                                <div class="av-name-info">
+                                                    <div class="av-name" tabindex="0" aria-label="Director's Suite">
+                                                        Director's Suite
+                                                    </div>
+                                                    <div class="av-left-rooms" tabindex="0" aria-label="only 1 left">
+                                                        only
+                                                        <span rate-only-left="" data-lang-only="only"
+                                                            data-lang-left="left">1</span>
+                                                        left
+                                                    </div>
+                                                </div>
+                                                <div class="av-min-max-wrapper">
+                                                    <div class="av-occupancy">
+                                                        <div>Maximum Occupancy</div>
+                                                        <div>
+                                                            <img class="guests_icon"
+                                                                src="https://hotels.cloudbeds.com/assets/booking/images/guest.png"
+                                                                alt="max guests icon" />
+                                                            <span rate-max-occupancy="" tabindex="0"
+                                                                data-lang-max-occupancy="Maximum Occupancy"
+                                                                aria-label="Maximum Occupancy 2">2</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="av-max-stay">
+                                                        <div>Minimum Stay</div>
+                                                        <div>
+                                                            <span rate-min-los="" tabindex="0"
+                                                                data-lang-min-los="Minimum Stay"
+                                                                aria-label="Minimum Stay {rates.[0].los_min}} Night(s)">1</span>
+                                                            <span>Night(s)</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="av-rates">
+                                                    <div class="price-from">Price From</div>
+                                                    <div class="av-roomrate-wrapper">
+                                                        <div class="av-roomrate" data-short-name="DS"
+                                                            data-package-internal-name="">
+                                                            <div class="md-radio">
+                                                                <input name="check_roomrate-53603" class="md-radiobtn"
+                                                                    id="radio-53603-100982" type="radio"
+                                                                    data-package-id="0" data-rate-id="100982"
+                                                                    checked="checked" autocomplete="off" />
+                                                                <label for="radio-53603-100982" class="rate-label"
+                                                                    tabindex="0" aria-label="Standard Rate: $450.00">
+                                                                    <span class="check"></span>
+                                                                    <span class="box"></span>
+                                                                    <em>Standard Rate</em>
+                                                                </label>
+                                                                <div class="checked"></div>
+                                                            </div>
+                                                            <div class="av-rate-price">
+                                                                <span> $450.00 </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="av-roomrate" data-short-name="DS"
+                                                            data-package-internal-name="Last minute 2022">
+                                                            <div class="md-radio">
+                                                                <input name="check_roomrate-53603" class="md-radiobtn"
+                                                                    id="radio-53603-1063942" type="radio"
+                                                                    data-package-id="146410" data-rate-id="1063942"
+                                                                    autocomplete="off" />
+                                                                <label for="radio-53603-1063942" class="rate-label"
+                                                                    tabindex="0"
+                                                                    aria-label="Last Minute Offer (Breakfast Included, Non-Refundable): $405.00">
+                                                                    <span class="check"></span>
+                                                                    <span class="box"></span>
+                                                                    <em>Last Minute Offer (Breakfast Included,
+                                                                        Non-Refundable)</em>
+                                                                </label>
+                                                                <div class="checked"></div>
+                                                            </div>
+                                                            <div class="av-rate-price">
+                                                                <span class="old-price"> $450.00 </span>
+                                                                <span class="new-price"> $405.00 </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr />
+
+                                                <div class="av-details">
+                                                    <a class="details-switcher show-details" href="#"
+                                                        aria-label="See Details">
+                                                        <i class="fa fa-arrow-circle-o-down"></i>
+                                                        <i class="fa fa-arrow-circle-o-up"></i>
+                                                        <span rate-details-switcher-text=""
+                                                            data-closed-details-text="See Details"
+                                                            data-opened-details-text="Hide Details"></span>
+                                                    </a>
+                                                    <div class="av-room-options">
+                                                        <div class="av-adults">
+                                                            <label class="type_of_room">Adults</label>
+                                                            <select class="adults_select bs-select-hidden"
+                                                                name="adults[100982]" data-aria-label-prefix="Adults">
+                                                                <option value="1" selected="">1</option>
+                                                                <option value="2">2</option>
+                                                            </select>
+                                                            <div class="btn-group bootstrap-select adults_select">
+                                                                <button type="button"
+                                                                    class="btn dropdown-toggle btn-default"
+                                                                    data-toggle="dropdown" aria-label="Adults: 1"
+                                                                    title="1">
+                                                                    <span
+                                                                        class="filter-option pull-left">1</span>&nbsp;<span
+                                                                        class="caret"></span>
+                                                                </button>
+                                                                <div class="dropdown-menu open">
+                                                                    <ul class="dropdown-menu inner" role="menu">
+                                                                        <li data-original-index="0" class="selected">
+                                                                            <a tabindex="0" class="" style=""
+                                                                                data-tokens="null"><span
+                                                                                    class="checkbox check-mark"><span
+                                                                                        class="inc"></span><span
+                                                                                        class="check"></span><span
+                                                                                        class="box"></span></span><span
+                                                                                    class="text">1</span></a>
+                                                                        </li>
+                                                                        <li data-original-index="1">
+                                                                            <a tabindex="0" class="" style=""
+                                                                                data-tokens="null"><span
+                                                                                    class="checkbox check-mark"><span
+                                                                                        class="inc"></span><span
+                                                                                        class="check"></span><span
+                                                                                        class="box"></span></span><span
+                                                                                    class="text">2</span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="av-children">
+                                                            <label class="type_of_room">Children</label>
+                                                            <select class="children_select bs-select-hidden"
+                                                                name="kids[100982]" data-aria-label-prefix="Children">
+                                                                <option value="0" selected="">0</option>
+                                                                <option value="1">1</option>
+                                                            </select>
+                                                            <div class="btn-group bootstrap-select children_select">
+                                                                <button type="button"
+                                                                    class="btn dropdown-toggle btn-default"
+                                                                    data-toggle="dropdown" aria-label="Children: 0"
+                                                                    title="0">
+                                                                    <span
+                                                                        class="filter-option pull-left">0</span>&nbsp;<span
+                                                                        class="caret"></span>
+                                                                </button>
+                                                                <div class="dropdown-menu open">
+                                                                    <ul class="dropdown-menu inner" role="menu">
+                                                                        <li data-original-index="0" class="selected">
+                                                                            <a tabindex="0" class="" style=""
+                                                                                data-tokens="null"><span
+                                                                                    class="checkbox check-mark"><span
+                                                                                        class="inc"></span><span
+                                                                                        class="check"></span><span
+                                                                                        class="box"></span></span><span
+                                                                                    class="text">0</span></a>
+                                                                        </li>
+                                                                        <li data-original-index="1">
+                                                                            <a tabindex="0" class="" style=""
+                                                                                data-tokens="null"><span
+                                                                                    class="checkbox check-mark"><span
+                                                                                        class="inc"></span><span
+                                                                                        class="check"></span><span
+                                                                                        class="box"></span></span><span
+                                                                                    class="text">1</span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="no-rooms av-quantity">
+                                                            <label class="type_of_room"> Rooms </label>
+                                                            <div class="several_rows">
+                                                                <select class="rooms_select bs-select-hidden"
+                                                                    name="qty_rooms[100982]" data-aria-label-prefix="
+                                                        Rooms    
+                                                ">
+                                                                    <option value="0" selected="">0</option>
+                                                                    <option value="1">1</option>
+                                                                </select>
+                                                                <div class="btn-group bootstrap-select rooms_select">
+                                                                    <button type="button"
+                                                                        class="btn dropdown-toggle btn-default"
+                                                                        data-toggle="dropdown" aria-label="Rooms: 0"
+                                                                        title="0">
+                                                                        <span
+                                                                            class="filter-option pull-left">0</span>&nbsp;<span
+                                                                            class="caret"></span>
+                                                                    </button>
+                                                                    <div class="dropdown-menu open">
+                                                                        <ul class="dropdown-menu inner" role="menu">
+                                                                            <li data-original-index="0"
+                                                                                class="selected">
+                                                                                <a tabindex="0" class="" style=""
+                                                                                    data-tokens="null"><span
+                                                                                        class="checkbox check-mark"><span
+                                                                                            class="inc"></span><span
+                                                                                            class="check"></span><span
+                                                                                            class="box"></span></span><span
+                                                                                        class="text">0</span></a>
+                                                                            </li>
+                                                                            <li data-original-index="1">
+                                                                                <a tabindex="0" class="" style=""
+                                                                                    data-tokens="null"><span
+                                                                                        class="checkbox check-mark"><span
+                                                                                            class="inc"></span><span
+                                                                                            class="check"></span><span
+                                                                                            class="box"></span></span><span
+                                                                                        class="text">1</span></a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 rooms_book col-sm-12 col-xs-12 general_info" id="general-info">
+                                <a href="javascript:;" name="go_book_now" class="hide"></a>
+                                <div class="book_inner">
+                                    <p class="selected_rooms hide">
+                                        <span class="roomsCount"></span> Accommodation(s) for
+                                    </p>
+                                    <p class="selected_rooms_price hide"></p>
+                                    <a href="javascript:;" class="btn green btn-lg btn-block book_now disabled"
+                                        aria-label="BOOK NOW" data-focus-target="book_now">BOOK NOW</a>
+                                    <div class="clearfix"></div>
+                                    <div class="show_promo_code margin-top-10">
+                                        <a href="javascript:;">Have a promo code?</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-container property_info">
+                    <div class="page-content-wrapper">
+                        <div class="portlet box property_info">
+                            <div class="portlet-title">
+                                <div class="caption">Property Information</div>
+                            </div>
+                            <div class="portlet-body">
+                                <div class="map_info">
+                                    <p><span>Property Name:</span> The Sandhya</p>
+                                    <p><span>Address 1:</span> The Sandhya</p>
+                                    <p><span>Address 2 :</span> Baranige Watha, Walhengoda,</p>
+                                    <p><span>City :</span> Ahangama</p>
+                                    <p><span>Postal Code :</span> 80650</p>
+                                    <p><span>Contact Name:</span> Reservations and Enquiry</p>
+                                    <p>
+                                        <span>Phone:</span>
+                                        <a href="tel:+94765700007">+94765700007</a>
+                                    </p>
+                                    <p>
+                                        <span>Email:</span>
+                                        <a href="mailto:reservations@thesandhya.com">reservations@thesandhya.com</a>
+                                    </p>
+                                </div>
+                                <h5>Amenities</h5>
+                                <ul class="amenities">
+                                    <li title="Baggage storage">Baggage storage</li>
+                                    <li title="Laundry service">Laundry service</li>
+                                    <li title="Lounge">Lounge</li>
+                                    <li title="Room service">Room service</li>
+                                    <li title="Swimming pool">Swimming pool</li>
+                                    <li title="Welcome drink">Welcome drink</li>
+                                </ul>
+                                <div style="clear: both"></div>
+                                <hr />
+
+                                <div class="checkin-checkout-terms-block">
+                                    <h5>Check-in/Check-out Policies</h5>
+                                    <p class="checkin">
+                                        This property has the following check-in and check-out
+                                        times and policies: <br /><br />
+                                    </p>
+                                    <p class="checkin"><span>Check-In: </span> 14:00</p>
+                                    <p class="checkin"><span>Check-Out: </span> 12:00</p>
+                                </div>
+
+                                <h5 class="politica cancellation_policy_row">
+                                    Property and Cancellation Policies :
+                                </h5>
+                                <div class="cancellation_policy">
+                                    <b>To cancel or modify, please contact us at
+                                        reservations@thesandhya.com<br /><br />For stays covering
+                                        the period from 18 December to 9 January:</b><br /><br />Minimum stay
+                                    requirement<br />50% of the entire
+                                    stay's charge will be required as&nbsp;deposit at time of
+                                    booking<br />50% outstanding amount to be paid at least 30
+                                    days prior to check-in date; if payment of outstanding
+                                    amount&nbsp;is not paid, the booking will be cancelled and
+                                    all deposits forfeited&nbsp;<br />30-day cancellation
+                                    notice<br />If cancellations /changes are made outside of
+                                    30-day window, 50% of deposit paid will be refunded<br />If
+                                    cancellations/changes are made within of 30-day window, 0%
+                                    of deposit paid will be refunded<br /><b><br />For bookings made for stays during
+                                        the rest of the
+                                        year:</b><br />21-day cancellation/change notice<br /><br /><b>For ALL DOMESTIC
+                                        RATES:</b><br />Non-cancelable, non-refundable regardless of what may
+                                    be listed with any rate type<br />Billed in LKR; US$ rate is
+                                    for reference only<br /><b><br />OUR APOLOGIES BUT WE ARE NOT ABLE TO RESPOND TO
+                                        RESERVATIONS ENQUIRIES/REQUESTS THROUGH OUR HOTEL
+                                        PHONE.<br /></b><b><br />FOR GROUP BOOKINGS OF 3 ROOMS OR MORE,&nbsp; terms
+                                        may differ.&nbsp; Reservation will be non-refundable at
+                                        time of booking, regardless of rate type.<br /></b><br />
+                                </div>
+
+                                <h5 class="politica">Terms and Conditions</h5>
+                                <div class="reservations_terms_conditions">
+                                    <p class="pp">
+                                        Adults Only<br />Rates are on a per room per night basis
+                                        for a maximum of 2 adults; for triple share, a US$75++
+                                        will be applied and is subject to availability (please
+                                        contact hotel directly)<br />All rates are inclusive of
+                                        daily breakfast for 2 adults<br />Prices are exclusive of
+                                        service charge and applicable taxes except when stated
+                                        otherwise in rate policy<br />No-smoking throughout the
+                                        interior of hotel<br />No private parties or events unless
+                                        arranged exclusively with hotel management<br />No loud
+                                        activities after 10pm<br />The hotel has the right to
+                                        amend policies from time to time and retrospectively<br />Check-in
+                                        2pm; early check-in subject to availability<br />Check-out
+                                        12pm; late check-out subject to availability&nbsp;<br />Parking
+                                        available and subject to availability<br />Guests must
+                                        acknowledge and observe House Rules upon check-in and
+                                        throughout the stay<br />Guests are recommended to
+                                        practice responsibility over their personal belongings and
+                                        utilise in-room safes; the hotel will not be held
+                                        responsible for any losses as a result of
+                                        negligence&nbsp;<br />The Proprietor and Hotel reserve the
+                                        right to cancel any reservation due to unexpected
+                                        incidents and breakdowns at the property, force majeure,
+                                        or inappropriate behaviour or demands by guests<br />Guests
+                                        with children will unfortunately be turned away at check
+                                        in with no refund given<br /><br /><b>All reservations must be secured by a
+                                            valid credit
+                                            card.</b><br />(1)&nbsp; RESERVATION CONFIRMATION: Your
+                                        reservation is confirmed by a valid credit card; no charge
+                                        will be made&nbsp;until within the stated cancelation
+                                        period, except for reservations that are non-refundable.
+                                        However, to ensure the card provided is valid and has
+                                        sufficient credit to cover your stay, The
+                                        Sandhya&nbsp;will perform a pre-authorisation of the card
+                                        provided. If that pre-authorisation is
+                                        unsuccessful,&nbsp;your reservation may be
+                                        cancelled.&nbsp;<br /><span>(2)&nbsp; The name of the credit card holder must be
+                                            the same as the guest's name on the booking and the
+                                            credit card must be presented to the hotel upon
+                                            check-in. If the guest is unable to present the credit
+                                            card upon check-in or the name on the credit card does
+                                            not match the name of the guest, the guest will need to
+                                            pay the full amount directly to the hotel once
+                                            again.</span><br />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-footer">
+                <div class="container">
+                    <span class="security-sprite security-pci"></span>
+                    <span class="security-sprite security-ssl"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
